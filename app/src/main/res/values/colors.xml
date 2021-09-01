@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#1D1D1F</color>
+    <color name="white">#F5F5F7</color>
+    <color name="colorPrimary">#4cb69f</color>
+    <color name="colorPrimaryDark">#201d3a</color>
+    <color name="colorAccent">#201d3a</color>
+    <color name="Bar_text">#F5F5F7</color>
+    <color name="Bar_sel_text">#BFBBBB</color>
+
+    <color name="twitterBlue">#1CA1F1</color>
+    <color name="twitterBlueDarker">#188CD3</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhitesmoke">#E8ECEC</color>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorgGainsboro">#929292</color>
+</resources>

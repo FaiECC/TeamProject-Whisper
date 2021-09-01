@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="whispericon" type="id" />
+    <item name="whispermailaddress" type="id" />
+    <item name="whispername" type="id" />
+    <item name="whispertime" type="id" />
+    <item name="whisper" type="id" />
+    <item name="whisperimage" type="id" />
+    <item name="btnFocus" type="id" />
+    <item name="llBlno" type="id" />
+</resources>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration"
+    android:background="#f5f5f5"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/createAc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新しいアカウントを作ろう"
+            android:textSize="25sp"
+            android:transitionName="transition_text_title"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/sign2start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:text="Sign in to Start"
+            android:textSize="18sp"
+            android:transitionName="transition_text_subTitle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+<!--            //Username-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/userEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ユーザ名"
+                app:counterEnabled="true"
+                app:counterMaxLength="15"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:transitionName="transition_username"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+<!--            //Email登録-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/emailEditText"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="10dp"
+                android:hint="@string/email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+<!--            //パスワード登録-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/passwordEditText"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:hint="@string/password"
+                app:passwordToggleEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:transitionName="transition_password"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+<!--            //Confirm Password-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordEditText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="パスワード再入力"
+                app:passwordToggleEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="registerUser"
+            android:text="登録"
+            android:textColor="#fff"
+            android:transitionName="transition_next_btn"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/forSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="ログインへ戻る"
+            android:textColor="#000"
+            android:transitionName="transition_login_sign"/>
+    </LinearLayout>
+
+</ScrollView>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".Registration">-->
+
+<!--    <include-->
+<!--        android:id="@+id/toolbar"-->
+<!--        layout="@layout/bar_layout" />-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:orientation="vertical"-->
+<!--        android:paddingTop="35dp"-->
+<!--        android:paddingRight="16dp"-->
+<!--        android:paddingLeft="16dp">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="16sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/emailEditText"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:hint="@string/email"-->
+<!--            android:inputType="textEmailAddress"-->
+<!--            android:autofillHints="TypeHere" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/passwordEditText"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:hint="@string/password"-->
+<!--            android:inputType="textPassword" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/passwordEditText2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:hint="@string/password2"-->
+<!--            android:inputType="textPassword" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/userEdittext"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:hint="ユーザ名"-->
+<!--            android:inputType="text" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/buttonRegister"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:background="@color/colorPrimaryDark"-->
+<!--            android:text="登録"-->
+<!--            android:textColor="#fff" />-->
+
+
+<!--    </LinearLayout>-->
+
+
+<!--</RelativeLayout>-->

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WhisperUpload">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="599dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <!--        layoutのため-->
+        <Button
+            android:id="@+id/BtnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/cancel" />
+
+        <TextView
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/BtnUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/upload" />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ETUpload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="165dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:hint=" What's happening"
+        android:textSize="16sp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        tools:ignore="HardcodedText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:targetApi="lollipop" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</RelativeLayout>
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/ETUpload"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:autofillHints="TypeHere"-->
+    <!--        android:inputType="text"-->
+    <!--        tools:ignore="LabelFor" />-->
+
+    <!--        <androidx.appcompat.widget.Toolbar-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:background="?backgroundColor"-->
+    <!--            android:theme="@style/Widget.AppCompat.Toolbar"-->
+    <!--            app:navigationIcon="@drawable/ic_close">-->
+
+    <!--        </androidx.appcompat.widget.Toolbar>-->
+
+    <!--        <RelativeLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:id="@id/toolbar"-->
+    <!--            android:padding="15dp">-->
+
+    <!--            <EditText-->
+    <!--                android:id="@+id/ETUpload"-->
+    <!--                android:layout_width="377dp"-->
+    <!--                android:layout_height="51dp"-->
+    <!--                android:layout_alignParentTop="true"-->
+    <!--                android:layout_marginTop="85dp"-->
+    <!--                android:background="@android:color/transparent"-->
+    <!--                android:hint="What's happening"-->
+    <!--                android:singleLine="false"-->
+    <!--                android:textSize="16sp" />-->
+
+    <!--            <Button-->
+    <!--                android:id="@+id/BtnCancel"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_alignParentStart="true"-->
+    <!--                android:layout_alignParentTop="true"-->
+    <!--                android:layout_marginStart="15dp"-->
+    <!--                android:layout_marginTop="15dp"-->
+    <!--                android:text="Edit Tweet"-->
+    <!--                android:textColor="@color/twitterBlueDarker"-->
+    <!--                android:textSize="17sp" />-->
+
+    <!--            <Button-->
+    <!--                android:id="@+id/BtnUpload"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="35dp"-->
+    <!--                android:layout_alignParentTop="true"-->
+    <!--                android:layout_alignParentEnd="true"-->
+    <!--                android:layout_gravity="right"-->
+    <!--                android:layout_marginTop="15dp"-->
+    <!--                android:layout_marginEnd="15dp"-->
+    <!--                android:layout_marginRight="15dp"-->
+    <!--                android:background="@drawable/btn_round_blue"-->
+    <!--                android:paddingLeft="20dp"-->
+    <!--                android:paddingRight="20dp"-->
+    <!--                android:text="Update Tweet"-->
+    <!--                android:textAllCaps="false"-->
+    <!--                android:textColor="@color/colorWhite"-->
+    <!--                android:textSize="15sp" />-->
+
+    <!--        </RelativeLayout>-->
+
+    <!--        <RelativeLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:padding="10dp"-->
+    <!--            android:layout_alignParentBottom="true">-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:paddingLeft="20dp"-->
+    <!--                android:paddingRight="20dp"-->
+    <!--                android:layout_centerInParent="true"-->
+    <!--                android:layout_height="40dp"-->
+    <!--                android:text="You can only edit within 1 minute of tweeting"-->
+    <!--                android:textAllCaps="false"-->
+    <!--                android:textSize="13sp"-->
+    <!--                android:textColor="@color/twitterBlue"/>-->
+
+    <!--        </RelativeLayout>-->
+
+    <!--</RelativeLayout>-->
